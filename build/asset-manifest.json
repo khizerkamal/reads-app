@@ -1,0 +1,14 @@
+{
+  "main.css": "/reads-app/static/css/main.9c66a193.chunk.css",
+  "main.js": "/reads-app/static/js/main.1f266c4b.chunk.js",
+  "main.js.map": "/reads-app/static/js/main.1f266c4b.chunk.js.map",
+  "static/js/1.aeb38638.chunk.js": "/reads-app/static/js/1.aeb38638.chunk.js",
+  "static/js/1.aeb38638.chunk.js.map": "/reads-app/static/js/1.aeb38638.chunk.js.map",
+  "runtime~main.js": "/reads-app/static/js/runtime~main.6c275f45.js",
+  "runtime~main.js.map": "/reads-app/static/js/runtime~main.6c275f45.js.map",
+  "static/media/App.css": "/reads-app/static/media/arrow-drop-down.78c6f53b.svg",
+  "static/css/main.9c66a193.chunk.css.map": "/reads-app/static/css/main.9c66a193.chunk.css.map",
+  "index.html": "/reads-app/index.html",
+  "precache-manifest.d1707ab85f8ba453d5ea17623ae5cd2d.js": "/reads-app/precache-manifest.d1707ab85f8ba453d5ea17623ae5cd2d.js",
+  "service-worker.js": "/reads-app/service-worker.js"
+}
