@@ -1,4 +1,5 @@
 import React,{ Component } from 'react'
+import { Link } from 'react-router-dom'
 import Book from './book'
 import * as BooksAPI from './BooksAPI'
 
@@ -31,7 +32,7 @@ export default class searchPage extends Component {
         return (
             <div className="search-books">
             <div className="search-books-bar">
-              <button className="close-search" onClick={() => this.setState({ showSearchPage: false })}>Close</button>
+              <Link to="/" className="close-search">Close</Link>
               <div className="search-books-input-wrapper">
                 {/*
                   NOTES: The search from BooksAPI is limited to a particular set of search terms.
@@ -53,11 +54,15 @@ export default class searchPage extends Component {
             <div className="search-books-results">
               <ol className="books-grid">
                 {
-                  this.state.booksFound.map(books => (
-                    <li key={books.id}>
-                      <Book book={books}/>
-                    </li>
-                  ))
+                  this.state.booksFound.map(searchedbook => {
+                    let shelf = "none";
+                    this.props.books.map(book => book.id === searchedbook.id ? shelf = book.shelf : '')
+                    return (
+                      <li key={searchedbook.id}>
+                        <Book book={searchedbook} moveShelf={this.props.moveShelf} currentShelf={shelf}/>
+                      </li>
+                    )
+                  })  
                 }
               </ol>
             </div>
